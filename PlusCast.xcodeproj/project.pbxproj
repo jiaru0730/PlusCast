@@ -15,6 +15,7 @@
 		C1C8271E1CC776CD00BE38E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C8271C1CC776CD00BE38E3 /* LaunchScreen.storyboard */; };
 		C1C827291CC776CD00BE38E3 /* PlusCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827281CC776CD00BE38E3 /* PlusCastTests.swift */; };
 		C1C827341CC776CD00BE38E3 /* PlusCastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827331CC776CD00BE38E3 /* PlusCastUITests.swift */; };
+		C1D9B9E51CD82A9A00638186 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = C1D9B9E41CD82A9A00638186 /* Model */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C1C8272F1CC776CD00BE38E3 /* PlusCastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlusCastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C827331CC776CD00BE38E3 /* PlusCastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusCastUITests.swift; sourceTree = "<group>"; };
 		C1C827351CC776CD00BE38E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1D9B9E41CD82A9A00638186 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		C1C827101CC776CD00BE38E3 /* PlusCast */ = {
 			isa = PBXGroup;
 			children = (
+				C1D9B9E41CD82A9A00638186 /* Model */,
 				C1C827111CC776CD00BE38E3 /* AppDelegate.swift */,
 				C1C827131CC776CD00BE38E3 /* FirstViewController.swift */,
 				C1C827151CC776CD00BE38E3 /* SecondViewController.swift */,
@@ -196,6 +199,7 @@
 				TargetAttributes = {
 					C1C8270D1CC776CD00BE38E3 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9PNK568TLA;
 					};
 					C1C827231CC776CD00BE38E3 = {
 						CreatedOnToolsVersion = 7.3;
@@ -234,6 +238,7 @@
 			files = (
 				C1C8271E1CC776CD00BE38E3 /* LaunchScreen.storyboard in Resources */,
 				C1C8271B1CC776CD00BE38E3 /* Assets.xcassets in Resources */,
+				C1D9B9E51CD82A9A00638186 /* Model in Resources */,
 				C1C827191CC776CD00BE38E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PlusCast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jiaru.PlusCast;
@@ -416,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PlusCast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jiaru.PlusCast;
@@ -488,6 +495,7 @@
 				C1C8273A1CC776CD00BE38E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1C8273B1CC776CD00BE38E3 /* Build configuration list for PBXNativeTarget "PlusCastTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +504,7 @@
 				C1C8273D1CC776CD00BE38E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1C8273E1CC776CD00BE38E3 /* Build configuration list for PBXNativeTarget "PlusCastUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +513,7 @@
 				C1C827401CC776CD00BE38E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
