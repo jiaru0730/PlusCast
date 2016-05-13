@@ -18,7 +18,7 @@ class FirstViewController: UIViewController, NSXMLParserDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        
+        self.requestPodcastInfo()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,9 +30,9 @@ class FirstViewController: UIViewController, NSXMLParserDelegate {
     
     
     func requestPodcastInfo() {
-        let parser = NSXMLParser(contentsOfURL: NSURL(string: "http://dameshek.libsyn.com/rss")!)
+        let parser = NSXMLParser(contentsOfURL: NSURL(string: "http://www.npr.org/rss/rss.php?id=1033")!)
         parser?.delegate = self
-        parser?.parse()
+        let flag = parser?.parse()
         
         
     }
@@ -40,27 +40,31 @@ class FirstViewController: UIViewController, NSXMLParserDelegate {
     // MARK: - NSXMLParser Delegate
     
     func parserDidStartDocument(parser: NSXMLParser) {
-        
+        NSLog("JeRRY")
     }
     
     func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
-        
+        NSLog("JeRRY")
     }
     
     func parser(parser: NSXMLParser, foundCharacters string: String) {
-        
+        NSLog("JeRRY")
     }
     
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        
+        NSLog("JeRRY")
     }
     
     func parserDidEndDocument(parser: NSXMLParser) {
-        
+        NSLog("JeRRY")
     }
     
     func parser(parser: NSXMLParser, foundCDATA CDATABlock: NSData) {
-        
+        NSLog("JeRRY")
+    }
+    
+    func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
+        NSLog("JeRRY")
     }
     
 }
