@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  PodcastListViewController.swift
 //  PlusCast
 //
 //  Created by JiaRu on 16/4/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, NSXMLParserDelegate {
+class PodcastListViewController: UIViewController, NSXMLParserDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,6 @@ class FirstViewController: UIViewController, NSXMLParserDelegate {
         let parser = NSXMLParser(contentsOfURL: NSURL(string: "http://www.npr.org/rss/rss.php?id=1033")!)
         parser?.delegate = self
         let flag = parser?.parse()
-        
         
     }
     

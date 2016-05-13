@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1C4F45D1CE61F77001B6D41 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = C1C4F45C1CE61F77001B6D41 /* Model */; };
 		C1C827121CC776CD00BE38E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827111CC776CD00BE38E3 /* AppDelegate.swift */; };
-		C1C827141CC776CD00BE38E3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827131CC776CD00BE38E3 /* FirstViewController.swift */; };
+		C1C827141CC776CD00BE38E3 /* PodcastListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827131CC776CD00BE38E3 /* PodcastListViewController.swift */; };
 		C1C827161CC776CD00BE38E3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827151CC776CD00BE38E3 /* SecondViewController.swift */; };
 		C1C827191CC776CD00BE38E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C827171CC776CD00BE38E3 /* Main.storyboard */; };
 		C1C8271B1CC776CD00BE38E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1C8271A1CC776CD00BE38E3 /* Assets.xcassets */; };
 		C1C8271E1CC776CD00BE38E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C8271C1CC776CD00BE38E3 /* LaunchScreen.storyboard */; };
 		C1C827291CC776CD00BE38E3 /* PlusCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827281CC776CD00BE38E3 /* PlusCastTests.swift */; };
 		C1C827341CC776CD00BE38E3 /* PlusCastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827331CC776CD00BE38E3 /* PlusCastUITests.swift */; };
-		C1D9B9E51CD82A9A00638186 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = C1D9B9E41CD82A9A00638186 /* Model */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C1C4F45C1CE61F77001B6D41 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 		C1C8270E1CC776CD00BE38E3 /* PlusCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlusCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C827111CC776CD00BE38E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1C827131CC776CD00BE38E3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		C1C827131CC776CD00BE38E3 /* PodcastListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListViewController.swift; sourceTree = "<group>"; };
 		C1C827151CC776CD00BE38E3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C1C827181CC776CD00BE38E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1C8271A1CC776CD00BE38E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		C1C8272F1CC776CD00BE38E3 /* PlusCastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlusCastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C827331CC776CD00BE38E3 /* PlusCastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusCastUITests.swift; sourceTree = "<group>"; };
 		C1C827351CC776CD00BE38E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1D9B9E41CD82A9A00638186 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +101,9 @@
 		C1C827101CC776CD00BE38E3 /* PlusCast */ = {
 			isa = PBXGroup;
 			children = (
-				C1D9B9E41CD82A9A00638186 /* Model */,
+				C1C4F45C1CE61F77001B6D41 /* Model */,
 				C1C827111CC776CD00BE38E3 /* AppDelegate.swift */,
-				C1C827131CC776CD00BE38E3 /* FirstViewController.swift */,
+				C1C827131CC776CD00BE38E3 /* PodcastListViewController.swift */,
 				C1C827151CC776CD00BE38E3 /* SecondViewController.swift */,
 				C1C827171CC776CD00BE38E3 /* Main.storyboard */,
 				C1C8271A1CC776CD00BE38E3 /* Assets.xcassets */,
@@ -238,7 +238,7 @@
 			files = (
 				C1C8271E1CC776CD00BE38E3 /* LaunchScreen.storyboard in Resources */,
 				C1C8271B1CC776CD00BE38E3 /* Assets.xcassets in Resources */,
-				C1D9B9E51CD82A9A00638186 /* Model in Resources */,
+				C1C4F45D1CE61F77001B6D41 /* Model in Resources */,
 				C1C827191CC776CD00BE38E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +266,7 @@
 			files = (
 				C1C827161CC776CD00BE38E3 /* SecondViewController.swift in Sources */,
 				C1C827121CC776CD00BE38E3 /* AppDelegate.swift in Sources */,
-				C1C827141CC776CD00BE38E3 /* FirstViewController.swift in Sources */,
+				C1C827141CC776CD00BE38E3 /* PodcastListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
