@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1C4F45D1CE61F77001B6D41 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = C1C4F45C1CE61F77001B6D41 /* Model */; };
 		C1C827121CC776CD00BE38E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827111CC776CD00BE38E3 /* AppDelegate.swift */; };
 		C1C827141CC776CD00BE38E3 /* PodcastListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827131CC776CD00BE38E3 /* PodcastListViewController.swift */; };
 		C1C827161CC776CD00BE38E3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827151CC776CD00BE38E3 /* SecondViewController.swift */; };
@@ -36,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C1C4F45C1CE61F77001B6D41 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 		C1C8270E1CC776CD00BE38E3 /* PlusCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlusCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C827111CC776CD00BE38E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1C827131CC776CD00BE38E3 /* PodcastListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 		C1C827101CC776CD00BE38E3 /* PlusCast */ = {
 			isa = PBXGroup;
 			children = (
-				C1C4F45C1CE61F77001B6D41 /* Model */,
 				C1C827111CC776CD00BE38E3 /* AppDelegate.swift */,
 				C1C827131CC776CD00BE38E3 /* PodcastListViewController.swift */,
 				C1C827151CC776CD00BE38E3 /* SecondViewController.swift */,
@@ -238,7 +235,6 @@
 			files = (
 				C1C8271E1CC776CD00BE38E3 /* LaunchScreen.storyboard in Resources */,
 				C1C8271B1CC776CD00BE38E3 /* Assets.xcassets in Resources */,
-				C1C4F45D1CE61F77001B6D41 /* Model in Resources */,
 				C1C827191CC776CD00BE38E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
