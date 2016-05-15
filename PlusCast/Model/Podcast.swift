@@ -16,4 +16,20 @@ class Podcast: NSObject {
     var imageURL: PodcastImage? = nil
     
     var episodes: Array<Episode>?
+    
+    init(xmlElement: XMLElement) {
+        super.init()
+        
+        if let childElements = xmlElement.childElements {
+            for childElement in childElements {
+                if childElement.elementName == "title" {
+                    self.title = childElement.textContent!
+                } else if childElement.elementName == "description" {
+                    self.podcastDescription = childElement.textContent!
+                } else if childElement.elementName == "link" {
+                    self.link = childElement.textContent!
+                }
+            }
+        }
+    }
 }

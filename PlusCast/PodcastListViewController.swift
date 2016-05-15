@@ -8,7 +8,9 @@
 
 import UIKit
 
-class PodcastListViewController: UIViewController, NSXMLParserDelegate {
+class PodcastListViewController: UIViewController {
+    
+    var podcastParseService = PodcastParseService(url: NSURL(string: "http://www.npr.org/rss/rss.php?id=1033")!)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,7 @@ class PodcastListViewController: UIViewController, NSXMLParserDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        self.requestPodcastInfo()
+        self.podcastParseService.requestPodcastInfo()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,42 +31,9 @@ class PodcastListViewController: UIViewController, NSXMLParserDelegate {
 
     
     
-    func requestPodcastInfo() {
-        let parser = NSXMLParser(contentsOfURL: NSURL(string: "http://www.npr.org/rss/rss.php?id=1033")!)
-        parser?.delegate = self
-        let flag = parser?.parse()
-        
-    }
+
     
-    // MARK: - NSXMLParser Delegate
-    
-    func parserDidStartDocument(parser: NSXMLParser) {
-        NSLog("JeRRY")
-    }
-    
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
-        NSLog("JeRRY")
-    }
-    
-    func parser(parser: NSXMLParser, foundCharacters string: String) {
-        NSLog("JeRRY")
-    }
-    
-    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        NSLog("JeRRY")
-    }
-    
-    func parserDidEndDocument(parser: NSXMLParser) {
-        NSLog("JeRRY")
-    }
-    
-    func parser(parser: NSXMLParser, foundCDATA CDATABlock: NSData) {
-        NSLog("JeRRY")
-    }
-    
-    func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
-        NSLog("JeRRY")
-    }
+
     
 }
 
