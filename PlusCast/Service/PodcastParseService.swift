@@ -8,12 +8,11 @@
 
 import Foundation
 
-class PodcastParseService: NSObject, NSXMLParserDelegate {
+protocol PodcastParseServiceDelegate {
     
-    init(url: NSURL) {
-        super.init()
-        self.url = url
-    }
+}
+
+class PodcastParseService: NSObject, NSXMLParserDelegate {
     
     var url: NSURL?
     
@@ -22,6 +21,11 @@ class PodcastParseService: NSObject, NSXMLParserDelegate {
     
     var elementStack = [XMLElement]()
     var latestElementString = ""
+    
+    init(url: NSURL) {
+        super.init()
+        self.url = url
+    }
     
     func requestPodcastInfo() {
         let parser = NSXMLParser(contentsOfURL: self.url!)!
@@ -67,6 +71,9 @@ class PodcastParseService: NSObject, NSXMLParserDelegate {
     }
     
     func parser(parser: NSXMLParser, foundCDATA CDATABlock: NSData) {
+        NSLog("CDATA found======================@")
+        let cdataString = NSString(data: CDATABlock, encoding: NSUTF8StringEncoding)
+        NSLog(String(format: "CDATA string:%@", cdataString!))
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
