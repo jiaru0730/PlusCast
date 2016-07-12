@@ -41,6 +41,7 @@ class PodcastParseService: NSObject, NSXMLParserDelegate {
     // MARK: - NSXMLParser Delegate
     
     func parserDidStartDocument(parser: NSXMLParser) {
+        NSLog("RSS parsing started.")
     }
     
     func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
@@ -72,8 +73,10 @@ class PodcastParseService: NSObject, NSXMLParserDelegate {
     
     func parser(parser: NSXMLParser, foundCDATA CDATABlock: NSData) {
         NSLog("CDATA found======================@")
-        let cdataString = NSString(data: CDATABlock, encoding: NSUTF8StringEncoding)
-        NSLog(String(format: "CDATA string:%@", cdataString!))
+        if let cdataString = String(data: CDATABlock, encoding: NSUTF8StringEncoding) {
+            NSLog(String(format: "CDATA string:%@", cdataString))
+            self.latestElementString = self.latestElementString + cdataString
+        }
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
