@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class UnplayedPodcastsViewController: UITableViewController {
+class UnplayedPodcastsViewController: UITableViewController, PodcastParseServiceDelegate {
     var podcastExampleURLs = [String]()
     
     var podcasts: [Podcast]?
@@ -23,13 +23,14 @@ class UnplayedPodcastsViewController: UITableViewController {
     override func viewDidAppear(animated: Bool) {
         for eachPodcastURL in self.podcastExampleURLs {
             let podcastParseService = PodcastParseService(url: NSURL(string: eachPodcastURL)!)
+            podcastParseService.delegate = self
             podcastParseService.requestPodcastInfo()
         }
     }
     
     // MARK: - UITableViewDataSource
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1;
+        return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,4 +48,19 @@ class UnplayedPodcastsViewController: UITableViewController {
         
         return cell
     }
+    
+    // MARK: PodcastParseServiceDelegate
+    func podcastParseDidFinish(parseService: PodcastParseService) {
+        if self.podcasts == nil {
+            self.podcasts = [Podcast]()
+        }
+        
+        self.podcasts?.append(parseService.podcast!)
+        
+        self.tableView .reloadData()
+    }
+
+
+
+
 }

@@ -9,12 +9,13 @@
 import Foundation
 
 protocol PodcastParseServiceDelegate {
-    
+    func podcastParseDidFinish(parseService: PodcastParseService)
 }
 
 class PodcastParseService: NSObject, NSXMLParserDelegate {
     
     var url: NSURL?
+    var delegate: PodcastParseServiceDelegate?
     
     var podcast: Podcast?
     var episodes = [Episode]()
@@ -69,6 +70,7 @@ class PodcastParseService: NSObject, NSXMLParserDelegate {
     
     func parserDidEndDocument(parser: NSXMLParser) {
         NSLog("RSS parsing ended.")
+        self.delegate?.podcastParseDidFinish(self)
     }
     
     func parser(parser: NSXMLParser, foundCDATA CDATABlock: NSData) {
