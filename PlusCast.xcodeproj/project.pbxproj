@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C12E3CF11D3518DF0002A2AE /* PodcastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E3CF01D3518DF0002A2AE /* PodcastDetailViewController.swift */; };
 		C1C4F4681CE62624001B6D41 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C4F4671CE62624001B6D41 /* Podcast.swift */; };
 		C1C4F46A1CE633FD001B6D41 /* PodcastImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C4F4691CE633FD001B6D41 /* PodcastImage.swift */; };
 		C1C4F46C1CE634E4001B6D41 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C4F46B1CE634E4001B6D41 /* Episode.swift */; };
 		C1C4F4721CE708C0001B6D41 /* PodcastParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C4F4711CE708C0001B6D41 /* PodcastParseService.swift */; };
 		C1C4F4741CE7FF40001B6D41 /* XMLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C4F4731CE7FF40001B6D41 /* XMLElement.swift */; };
-		C1C4F4761CE87809001B6D41 /* UnplayedPodcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C4F4751CE87809001B6D41 /* UnplayedPodcastsViewController.swift */; };
+		C1C4F4761CE87809001B6D41 /* PodcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C4F4751CE87809001B6D41 /* PodcastsViewController.swift */; };
 		C1C827121CC776CD00BE38E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827111CC776CD00BE38E3 /* AppDelegate.swift */; };
-		C1C827141CC776CD00BE38E3 /* PodcastListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827131CC776CD00BE38E3 /* PodcastListViewController.swift */; };
-		C1C827161CC776CD00BE38E3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C827151CC776CD00BE38E3 /* SecondViewController.swift */; };
 		C1C827191CC776CD00BE38E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C827171CC776CD00BE38E3 /* Main.storyboard */; };
 		C1C8271B1CC776CD00BE38E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1C8271A1CC776CD00BE38E3 /* Assets.xcassets */; };
 		C1C8271E1CC776CD00BE38E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C8271C1CC776CD00BE38E3 /* LaunchScreen.storyboard */; };
@@ -41,16 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C12E3CF01D3518DF0002A2AE /* PodcastDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastDetailViewController.swift; sourceTree = "<group>"; };
 		C1C4F4671CE62624001B6D41 /* Podcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Podcast.swift; path = Model/Podcast.swift; sourceTree = "<group>"; };
 		C1C4F4691CE633FD001B6D41 /* PodcastImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PodcastImage.swift; path = Model/PodcastImage.swift; sourceTree = "<group>"; };
 		C1C4F46B1CE634E4001B6D41 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Episode.swift; path = Model/Episode.swift; sourceTree = "<group>"; };
 		C1C4F4711CE708C0001B6D41 /* PodcastParseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PodcastParseService.swift; path = Service/PodcastParseService.swift; sourceTree = "<group>"; };
 		C1C4F4731CE7FF40001B6D41 /* XMLElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLElement.swift; path = Model/XMLElement.swift; sourceTree = "<group>"; };
-		C1C4F4751CE87809001B6D41 /* UnplayedPodcastsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnplayedPodcastsViewController.swift; sourceTree = "<group>"; };
+		C1C4F4751CE87809001B6D41 /* PodcastsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastsViewController.swift; sourceTree = "<group>"; };
 		C1C8270E1CC776CD00BE38E3 /* PlusCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlusCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C827111CC776CD00BE38E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1C827131CC776CD00BE38E3 /* PodcastListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListViewController.swift; sourceTree = "<group>"; };
-		C1C827151CC776CD00BE38E3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C1C827181CC776CD00BE38E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1C8271A1CC776CD00BE38E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1C8271D1CC776CD00BE38E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -133,13 +131,12 @@
 				C1C4F4701CE708A2001B6D41 /* Service */,
 				C1C4F4661CE6260E001B6D41 /* Model */,
 				C1C827111CC776CD00BE38E3 /* AppDelegate.swift */,
-				C1C827131CC776CD00BE38E3 /* PodcastListViewController.swift */,
-				C1C827151CC776CD00BE38E3 /* SecondViewController.swift */,
 				C1C827171CC776CD00BE38E3 /* Main.storyboard */,
 				C1C8271A1CC776CD00BE38E3 /* Assets.xcassets */,
 				C1C8271C1CC776CD00BE38E3 /* LaunchScreen.storyboard */,
 				C1C8271F1CC776CD00BE38E3 /* Info.plist */,
-				C1C4F4751CE87809001B6D41 /* UnplayedPodcastsViewController.swift */,
+				C1C4F4751CE87809001B6D41 /* PodcastsViewController.swift */,
+				C12E3CF01D3518DF0002A2AE /* PodcastDetailViewController.swift */,
 			);
 			path = PlusCast;
 			sourceTree = "<group>";
@@ -294,15 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1C827161CC776CD00BE38E3 /* SecondViewController.swift in Sources */,
 				C1C4F46C1CE634E4001B6D41 /* Episode.swift in Sources */,
-				C1C4F4761CE87809001B6D41 /* UnplayedPodcastsViewController.swift in Sources */,
+				C1C4F4761CE87809001B6D41 /* PodcastsViewController.swift in Sources */,
 				C1C4F4721CE708C0001B6D41 /* PodcastParseService.swift in Sources */,
 				C1C827121CC776CD00BE38E3 /* AppDelegate.swift in Sources */,
+				C12E3CF11D3518DF0002A2AE /* PodcastDetailViewController.swift in Sources */,
 				C1C4F46A1CE633FD001B6D41 /* PodcastImage.swift in Sources */,
 				C1C4F4681CE62624001B6D41 /* Podcast.swift in Sources */,
 				C1C4F4741CE7FF40001B6D41 /* XMLElement.swift in Sources */,
-				C1C827141CC776CD00BE38E3 /* PodcastListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

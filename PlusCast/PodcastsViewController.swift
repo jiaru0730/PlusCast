@@ -1,5 +1,5 @@
 //
-//  UnplayedPodcastsViewController.swift
+//  PodcastsViewController.swift
 //  PlusCast
 //
 //  Created by JiaRu on 16/5/15.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class UnplayedPodcastsViewController: UITableViewController, PodcastParseServiceDelegate {
+class PodcastsViewController: UITableViewController, PodcastParseServiceDelegate {
     var podcastExampleURLs = [String]()
     
     var podcasts: [Podcast]?
